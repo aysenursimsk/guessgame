@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>guess game</title>
+
+<style>
+    .guessbutton{
+        background-color: rgb(21, 41, 112);
+        color: aliceblue;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 5px;
+    border-width: 8px;
+    border-color: rgb(21, 41, 112);
+    border-style:solid;
+    }
+    .guessbutton:hover{
+        background-color:rgb(14, 26, 73);
+        border-color: rgb(14, 26, 73);
+        color: rgb(173, 178, 183);
+        cursor: pointer;
+    }
+    .guessbutton:active{
+        background-color: rgb(11, 21, 58);
+        border-color: rgb(11, 21, 58);
+        color: rgb(140, 143, 146);
+
+    }
+    .guesssentence{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: bolder;
+    }
+
+    .game{
+        border-color: gray;
+        border-width: 2px;
+        border-style: solid;
+        padding-left: 10px;
+        margin:30%;
+           }
+</style>
+</head>
+<body>
+
+    <div class="game">
+        <p class="guesssentence">1-10 Arasında Bir Sayı Tahmin Ediniz</p>
+        <input type="number" id="guessnumber" placeholder="bir sayı giriniz">
+        <p></p>
+        <button class="guessbutton" id="guessbuttonid">Tahmin Et</button>
+        <p id="popupmessage"></p>
+        <script src="guessgame.js" defer></script>
+    </div>
+
+
+</body>
+
+</html>
